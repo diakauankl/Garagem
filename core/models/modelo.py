@@ -7,4 +7,4 @@ class Modelo(models.Model):
     categoria = models.CharField(max_length=80, null=True, blank=True)
 
     def __str__(self):
-        return self.nome
+        return f'{self.nome.upper()} - {self.marca.upper()} - {self.categoria.upper()}'
